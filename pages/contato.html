@@ -10,18 +10,26 @@
     <body>
         <header>
             <a class="header__logo" href="../index.html">
-                <img src="../images/logo.svg" alt="logotipo C.A.S.A B.L.A.N.C.A.H">
+                    <img src="../images/logo.svg" alt="logotipo C.A.S.A B.L.A.N.C.A.H">
             </a>
-            <nav>
-                <ul class="header__menu">
-                    <li class="header__menu__options header__menu__options__home"><a href="../index.html">HOME</a></li>
-                    <li class="header__menu__options"><a href="eventos.html">EVENTOS</a></li>
-                    <li class="header__menu__options"><a href="galeria.html">GALERIA</a></li>
-                    <li class="header__menu__options"><a href="sobre_nos.html">SOBRE NÓS</a></li>
-                    <li class="header__menu__options header__menu__options--selected header__menu__options--border"><a href="contato.html">CONTATO</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div>
+                <input class="header__menu_mobile__checkbox" id="menu_hamburguer" type="checkbox">
+                <label for="menu_hamburguer" class="header__menu_mobile">
+                    <img src="../images/menu_hamburguer.svg" alt="menu_hamburguer">
+                </label>
+                <nav>
+                    <ul class="header__menu" id="header__menu">
+                        <li class="header__menu__options header__menu__options__home"><a href="../index.html">HOME</a></li>
+                        <li class="header__menu__options"><a href="eventos.html">EVENTOS</a></li>
+                        <li class="header__menu__options"><a href="galeria.html">GALERIA</a></li>
+                        <li class="header__menu__options"><a href="sobre_nos.html">SOBRE NÓS</a></li>
+                        <li class="header__menu__options header__menu__options--selected header__menu__options--border">
+                            <a href="contato.html">CONTATO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>          
+        </header>  
         <main class="c-main">
             <article class="c-main__card">
                 <p class="c-main__card__title">LOCALIZAÇÃO</p>

@@ -2,10 +2,10 @@
 
 .h-main
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    justify-items: stretch;
 }
 
 .h-main__text
@@ -16,17 +16,34 @@
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 15px;
+    align-self: center;
 }
 
-.h-main__text--small
+@media screen AND (min-width:480px)
 {
-    font-size: 70%;
-}
+    @keyframes small_words 
+    {
+        from {font-size: 35px;}
+        to {font-size: 20px;}  
+    }
+    @keyframes big_words 
+    {
+        from {font-size: 35px;}
+        to {font-size: 45px;}  
+    }
+    .h-main__text--small
+    {
+        animation-name: small_words;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    .h-main__text--big
+    {
+        animation-name: big_words;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
 
-.h-main__text--big
-{
-    font-weight: 400; 
-    font-size: 120%;
 }
 
 /*mobile*/
@@ -35,6 +52,7 @@
 {
     .h-main
     {
+        grid-template-columns: 1fr;
         background-image: url(../images/home/home_image.svg);
         height: 690px;
     }
@@ -54,6 +72,12 @@
     }
     .h-main__text--small
     {
+        font-size: 70%;
         font-weight: 300; 
+    }
+    .h-main__text--big
+    {
+        font-weight: 400; 
+        font-size: 120%;
     }
 }

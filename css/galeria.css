@@ -68,6 +68,15 @@
     grid-area: img12;
 }
 
+@media screen AND (min-width: 480px)
+{
+    .galeria__img:hover
+    {
+        transform: scale(1.5);
+    }
+} 
+
+
 @media screen AND (max-width: 480px) 
 {
     .galeria
