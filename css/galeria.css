@@ -1,0 +1,85 @@
+/*galeria*/
+
+.galeria
+{
+    display: grid;
+    grid-template-areas: 
+        "img1 img2 img3 img4"
+        "img5 img6 img7 img8"
+        "img9 img10 img11 img12";
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.galeria__img
+{
+    max-width: 250px;
+}
+
+.img1
+{
+    grid-area: img1;
+}
+.img2
+{
+    grid-area: img2;
+}
+.img3
+{
+    grid-area: img3;
+}
+.img4
+{
+    grid-area: img4;
+}
+.img5
+{
+    grid-area: img5;
+}
+.img6
+{
+    grid-area: img6;
+}
+.img7
+{
+    grid-area: img7;
+}
+.img8
+{
+    grid-area: img8;
+}
+.img9
+{
+    grid-area: img9;
+}
+.img10
+{
+    grid-area: img10;
+}
+.img11
+{
+    grid-area: img11;
+}
+.img12
+{
+    grid-area: img12;
+}
+
+@media screen AND (max-width: 480px) 
+{
+    .galeria
+    {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .galeria__img
+    {
+        max-width: 600px;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,136 @@
+/*contato*/
+
+input, textarea, select
+{
+    background-color: #D9D9D9;
+    border: 1px solid #000000;
+    box-shadow: -1px 5px 4px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+}
+
+::placeholder
+{
+    color: #8c8c8c;
+}
+
+.c-main
+{
+    background-image: url(../images/contato/casal_de_noivos.svg);
+    height: 688px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.c-main__card
+{
+    background: rgba(61, 58, 58, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+.c-main__card__title
+{
+    color: #FFFFFF;
+    font-weight: 400;
+    background-color: #404040;
+    padding: 10px 40px;
+    margin-bottom: 40px;
+    grid-area: titulo;
+}
+
+.c-main__form
+{
+    background: rgba(61, 58, 58, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+        "titulo titulo"
+        "nome nome"
+        "sobrenome sobrenome"
+        "email email"
+        "telefone tipo_evento"
+        "data quantidade"
+        "recado recado"
+        "botao botao";
+}
+
+.c-main__form__title
+{
+    color: #FFFFFF;
+    font-weight: 400;
+    background-color: #404040;
+    padding: 10px 40px;
+    margin-bottom: 40px;
+    grid-area: titulo;
+}
+
+textarea
+{
+    width: 100%;
+    height: 80px;
+    grid-area: recado;
+}
+
+.nome
+{
+    grid-area: nome;
+}
+.sobrenome
+{
+    grid-area: sobrenome;
+}
+.email
+{
+    grid-area: email;
+}
+.telefone
+{
+    grid-area: telefone;
+}
+.tipo_evento
+{
+    grid-area: tipo_evento;
+}
+.data
+{
+    grid-area: data;
+}
+.quantidade
+{
+    grid-area: quantidade;
+}
+.botao
+{
+    grid-area: botao;
+}
+
+@media screen AND (max-width: 480px)
+{
+    .c-main
+    {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .c-main__card
+    {
+        margin: 15px 0 30px 0;
+    }
+    .c-main__form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
