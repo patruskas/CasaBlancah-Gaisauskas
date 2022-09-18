@@ -1,0 +1,71 @@
+
+.card-body
+{
+    background-color: rgba(242, 225, 195, 0.8);
+    width: 100%;
+}
+.card-title
+{
+    color: #58391d;
+}
+.card-image
+{
+    width: 100%;
+}
+@media screen AND (min-width: 992px)
+{
+    .card
+    {
+        margin-top: 35px;
+        margin-bottom: 35px; 
+        width: fit-content;
+        background-color: #F2F2F2;
+        border: none;
+    }
+    .card-image
+    {
+        width: 600px;
+    }
+    .card-body
+    {
+        border-radius: 3.5px; 
+        position: absolute;
+        left: 564px;
+        top: 70px;
+        padding: 40px;
+        background-color: rgba(242, 225, 195, 0.8);
+        width: 600px;
+        height: fit-content;
+        font-weight: 400;
+        font-size: x-large;
+    }
+    .card-body--reverse
+    {
+        position: absolute;
+        left: 173px;
+        top: 70px;
+        padding: 40px;
+        background-color: rgba(242, 225, 195, 0.8);
+        width: 600px;
+        height: fit-content;
+        font-weight: 400;
+        border-radius: 3.5px; 
+    }
+    .card-container
+    {
+        position: relative;
+        margin-right: 610px;
+        background-color: #F2F2F2;
+    }
+    .card-container--reverse
+    {
+        display: relative;
+        margin-left: 735px;
+        background-color: #F2F2F2;
+    }
+    .card-image:hover
+    {
+        transform: rotate(4deg);
+        transition-duration: 2s;
+    }
+}

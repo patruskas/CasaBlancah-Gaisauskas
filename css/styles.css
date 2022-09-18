@@ -191,11 +191,6 @@ footer p
         padding: 15px;
     } 
 
-    #menu_hamburguer:checked ~ main
-    {
-        background-color: #000000;
-        opacity: 0.5;
-    }
     .header__menu__options--border
     {
         border: none;

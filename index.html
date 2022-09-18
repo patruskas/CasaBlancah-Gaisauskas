@@ -3,65 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstap_main.css">
+        <link rel="stylesheet" href="css/bootstrap_home.css">
         <title>C.A.S.A B.L.A.N.C.A.H</title>
-        <link href="css/styles.css" rel="stylesheet">
-        <link href="css/home.css" rel="stylesheet">
     </head>
     <body>
-        <div class="grid-container">
-            <header>
-                <a class="header__logo" href="index.html">
-                        <img src="images/logo.svg" alt="logotipo C.A.S.A B.L.A.N.C.A.H">
-                </a>
-                <div>
-                    <input class="header__menu_mobile__checkbox" id="menu_hamburguer" type="checkbox">
-                    <label for="menu_hamburguer" class="header__menu_mobile">
-                        <img src="images/menu_hamburguer.svg" alt="menu_hamburguer">
-                    </label>
-                    <nav>
-                        <ul class="header__menu" id="header__menu">
-                            <li class="header__menu__options header__menu__options__home header__menu__options--selected">
-                                <a href="index.html">HOME</a>
-                            </li>
-                            <li class="header__menu__options li__eventos">
-                                <a href="pages/eventos.html">EVENTOS</a>
-                            </li>
-                            <li class="header__menu__options li__galeria">
-                                <a href="pages/galeria.html">GALERIA</a>
-                            </li>
-                            <li class="header__menu__options li__sobre_nos">
-                                <a href="pages/sobre_nos.html">SOBRE NÓS</a>
-                            </li>
-                            <li class="header__menu__options header__menu__options--border">
-                                <a href="pages/contato.html">CONTATO</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>          
-            </header>  
-            <main class="h-main">
-                <div class="h-main__container">
-                    <h1 class="h-main__title">a new concept</h1>
-                        <p class="h-main__text">Cuidando dos <span class="h-main__text--small"> <br>pequenos detalhes</span>,
-                            <br>
-                            para realizar <span class="h-main__text--big"><br>grandes eventos</span>.
-                        </p> 
-                    <button>
-                        <a href="pages/contato.html">RESERVAS</a>
-                    </button>  
+        <div class="container-fluid px-0">
+            <div class="row card-header">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                            </a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">C.A.S.A B.L.A.N.C.A.H</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body lead">
+                              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="pages/eventos.html">EVENTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/galeria.html">GALERIA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/sobre_nos.html">SOBRE NÓS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link--border" href="pages/contato.html">CONTATO</a>
+                                </li>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>  
                 </div>
-                <img class="h-main__image" src="images/home/home_image.svg" alt="noiva com buquê de flores">
-            </main>
-            <footer>
-                <div>
-                    <a href="https://www.facebook.com/"><img src="images/logo_facebook.svg" alt="facebook"></a>
-                    <a href="https://www.youtube.com/"><img src="images/logo_youtube.svg" alt="youtube"></a>
-                    <a href="https://www.instagram.com/"><img src="images/logo_instagram.svg" alt="instagram"></a>
-                </div>   
-                <p>2022. Direitos Reservados</p>
-                <p>Copyright - Casa Blancah - Espaço para Casamentos e Eventos</p>
-                <p>São Paulo. Site por Creative Design.</p>
-            </footer>    
+            </div>
+            <div class="row card text-bg-light p-0 d-flex flex-row align-items-center justify-content-center">
+                <div class="col-md-6 card-body display-6 d-flex text-center align-items-center justify-content-center">
+                    <div>
+                        <h1 class="card-title m-3 text-decoration-underline">a new concept</h1>
+                        <p class="card-text m-3">Cuidando dos <span class="card-text--small"> <br>pequenos detalhes</span>,
+                            <br>
+                            para realizar <span class="card-text--big"><br>grandes eventos</span>.
+                        </p> 
+                    <a class="btn btn-lg m-3" href="pages/contato.html">RESERVAS</a>
+                    </div> 
+                </div>
+                <div class="col-md-6 p-0">
+                    <img class="card-img image-fluid d-none d-md-block" src="images/home/home_image.svg" alt="noiva com buquê de flores">
+                </div>
+            </div>
+            <div class="row card-footer  text-center pt-4 m-0">
+                <div class="col text-muted m-0">
+                    <div class="p-2">
+                        <a href="https://www.facebook.com/"><img src="images/logo_facebook.svg" alt="facebook"></a>
+                        <a href="https://www.youtube.com/"><img src="images/logo_youtube.svg" alt="youtube"></a>
+                        <a href="https://www.instagram.com/"><img src="images/logo_instagram.svg" alt="instagram"></a>
+                    </div>   
+                    <p class="pt-3">2022. Direitos Reservados<br>
+                    Copyright - Casa Blancah - Espaço para Casamentos e Eventos<br>
+                    São Paulo. Site por Creative Design.</p>
+                </div>
+            </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
