@@ -1,0 +1,6 @@
+1) Otimização das imagens
+	Página Eventos: Conversão da imagem "noiva_casamento" de svg para png. O tamanho da imagem, que era de 5.795 KB ficou de 273 KB.
+2) Adição dos metadados 'description' e 'keywords'
+3) Alteração do title
+	Página Eventos: Adição do nome da empresa.
+	Página Contato: Adição do nome e atividade da empresa.

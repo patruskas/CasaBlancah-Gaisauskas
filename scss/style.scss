@@ -2,7 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 @import '../scss/colors';
+@import '../scss/fonts';
 @import '../scss/contato';
+@import '../scss/eventos';
+
 
 *
 {
@@ -13,6 +16,7 @@ body
 {
     font-family: 'Poppins', sans-serif;
     background-color: $bg-light;
+    font-size: map-get($font-size, medium);
     .nav-item :hover 
     {
         background-color: $bg-card;
@@ -21,6 +25,7 @@ body
     {
         border: 0.5px solid $border;
         background-color: $bg-medium;
+        font-size: map-get($font-size, medium);
         letter-spacing: 0.18em;
     }
     .card-footer
